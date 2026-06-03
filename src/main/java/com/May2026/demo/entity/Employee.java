@@ -1,9 +1,13 @@
 package com.May2026.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -14,9 +18,12 @@ public class Employee {
 	private Integer emp_id;
     private String emp_name;
     private String email;
-    private String department;
     private Double salary;
-    private Integer dept_id;
+    private String status;
+    @ManyToOne
+    @JoinColumn(name="dept_id")
+    @JsonBackReference
+    private Department department;
     
     public Employee()
     {
@@ -39,13 +46,13 @@ public class Employee {
 		this.emp_name = emp_name;
 	}
 
-	public Integer getDept_id() {
+	/*public Integer getDept_id() {
 		return dept_id;
 	}
 
 	public void setDept_id(Integer dept_id) {
 		this.dept_id = dept_id;
-	}
+	}*/
 
 	public String getEmail() {
 		return email;
@@ -53,10 +60,10 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 	public Double getSalary() {
@@ -66,12 +73,13 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	public Object getStatus() {
+	public String getStatus() {
 		// TODO Auto-generated method stub
-		return null;
+		return status;
 	}
-	public void setStatus(Object status) {
+	public void setStatus(String status) {
 		// TODO Auto-generated method stub
+		this.status=status;
 		
 	}
     

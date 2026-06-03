@@ -36,7 +36,6 @@ public class EmployeeService {
 			existing.setDepartment(emp.getDepartment());
 			existing.setSalary(emp.getSalary());
 			existing.setStatus(emp.getStatus());
-			existing.setDept_id(emp.getDept_id());
 			return repo.save(existing);
 		}
 		return null;
