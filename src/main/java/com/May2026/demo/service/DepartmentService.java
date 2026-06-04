@@ -28,7 +28,7 @@ public class DepartmentService {
 	public Department updateDepartment(Integer id,Department dept)
 	{
 		Department existing = repo.findById(id).orElse(null);
-		if(existing!=null)
+		if(existing!=null && dept!=null)
 		{
 			existing.setDept_id(dept.getDept_id());
 			existing.setDept_name(dept.getDept_name());
