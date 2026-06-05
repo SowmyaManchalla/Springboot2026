@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <meta name = "viewport" content ="width=device-width",initial scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content ="ie-edge">
+   <meta name = "description" content = "This is my first homepage">
+   <meta name = "keywords" content = "HTML,CSS,Javascript">
+   <meta name = "author" content ="Sowmya Manchalla">
+   <meta name = "generator" content = "Visual Studio Code">
+   <hr style = "border: 2px solid" black;">
+   <p style = "color:black; font-size:16px;">This is a paragraph of text</p>
+   <p style = "color:black; font-size:16px;">This is another paragraph of text</p>
+   <p style = "color:black; font-size:16px;">This is yet another paragraph of text</p>
+   <pre style="color:black; font-size:16px;>This is a preformatted text block.      
+
+It preserves whitespaces and linebreaks.</pre>
+
+<title>My WEBPAGE</title>
+<head>
+<body style="background-color:rgb(24,194,27); color:black;font-family:Arial,sans-serif;text-align:center;">
+ <a href = "https://www.google.com" target="blank_" style="color:blue; text-decoration:none;font-size: 24 px;">Visit google.com</a>
+  This is my first home page
+<br>
+<address> B Royal palms,123 Main Street, Anytown, USA</address>
+<b>Bold</b>
+<br>
+<i>Italic</i>
+<br>
+<u>Underline</u>
+<br>
+<s>Strikethrough</s>
+<br>
+<mark>Highlight</mark>
+<br>
+<sub>
+ Susbscript
+</sub>
+<sup>Superscript</sup>
+<br>
+<h1 Style="color:red;font-size:36 px;">This is a heading 1</h1>
+<h2 style="color:orange;font-size:30 px;">This is a heading 2</h2>
+<h3 style="color:yellow;font-size:24 px;">This is a heading 3</h3>
+<h4 style="color:green; font-size:18 px;">This is a heading 4</h4>
+<h5 style="color:blue;font-size:14 px;">This is a heading 5</h5>
+<h6 style="color:purple;font-size:12 px;">This is a heading 6</h6>
+<p style= "color:black;font-size:16 px;">Code example:<code>System.out.println("Hello world");</code></p>
+<var style="color:brown;font-size:14 px;">Variable example<var>x</var></var>
+<kbd style="color:gray;font-size:14 px;">Keyboard example<kbd>Ctrl + C</kbd></kbd>
+<strong style="color:darkblue"; font-size:14px;">Strong example:<strong>Important!</strong></strong>
+<em style="color:darkred";font-size:14px;">Emphasis example:<em>Emphasized</em></em>
+<mark style="background-color:yellow;color:black;font-size:14px;">Highlight example:<mark>Highlight me!</mark></mark>
+<small style="color:darkgreen:font-size:12px;">Small text example:<small>Small text</small></small>
+<big style="color:darkmagenta:font-size:18px;">Big text example:<big>Big text</big></big>
+<hr style="border:1px solid black;">
+</body>
+</html>
+
+
