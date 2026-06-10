@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All common form controls registrationexample</title>
+    </head>
+    <body>
+        <h1>Form example</h1>
+        <form action="h1.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type ="radio" id="female" name="gender" value ="female">
+
+            <label for="female">Female</label><br><br>
+            <label for ="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label>
+            <input type="checkbox" id="hobby2" name="hobbies" value="writing">
+            <label for ="hobby2">Writing</label><br><br>
+            <label for="country">Country:</label>
+            <select id ="country" name="country">
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
