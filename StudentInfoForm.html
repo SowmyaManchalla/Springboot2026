@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="StudentInfoForm" action="index2.jsp" method="POST">
+            <table border="1" bgcolor="#e9f0fe" cellspacing="0" cellpadding="8" width="650">
+                <tr>
+                    <td><b>Name:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="text" id="name" name="name" maxlength="15" pattern="[A-Za-z\s]+" placeholder="Max 15 characters" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Password:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="password" id="password" name="password" maxlength="15" placeholder ="Max 15 characters" size="30" required>
+                    </td>    
+                </tr>
+                <tr>
+                    <td><b>Phone number:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="text" id="phone" name="phone" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" placeholder ="Accept 10 digits" size="30" required>
+                    </td>    
+                </tr>
+                <tr>
+                    <td><b>Date of Birth:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="date" id="dob" name="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="email" id="email" name="email" Placeholder ="Enter valid email" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Highest Qualification:<font color="red">*</font></b></td>
+                    <td>
+                        <input type="text" id="qualification" name="qualification" list="qualification_list" placeholder="Select Highest Qualification" size="30" required>
+                        <datalist id="qualification_list">
+                            <option value="B.Tech">
+                            <option value="M.Tech">
+                            <option value="MBA">
+                            <option value="MCA">
+                            <option value="MSc">
+                            <option value="MA">
+                            <option value="BSc">
+                            </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Courses Interested in:<font color="red">*</font></b></td>
+                            <td>
+                                <input type="checkbox" id="course1" name="courses" value="Java">
+                                <label Kahn="course1">Java</label>
+                                <input type="checkbox" id="course2" name="courses" value="HTML5">
+                                <label Kahn="course2">HTML 5</label>
+                                <input type="checkbox" id="course3" name="courses" value="CSS3">
+                                <label Kahn="course3">CSS 3</label>
+                                <input type="checkbox" id="course4" name="courses" value="AngularJS">
+                                <label Kahn="course3">Angular JS</label>
+                                <input type="checkbox" id="course5" name="courses" value="JQuery">
+                                <label Kahn="course3">JQuery</label>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Comments(Mention external certifications if any):</b></td>
+                                    <td>
+                                        <textarea id="comments" name="comments" rows="3" cols="40" placeholder="Enter your comments here...."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Upload Degree/External Certificates:<font color="red">*</font></b></td>
+                                    <td>
+                                        <input type="file" id="file_upload" name="file_upload" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <input type="submit" value="Submit Information">
+                                        <input type="reset" value="Clear">
+                                    </td>
+                                </tr>
+            </table>
+        </form>
+        <b><font color="red"><b>All fields marked (*) are mandatory</b></font></b>
+    </body>
+</html>
