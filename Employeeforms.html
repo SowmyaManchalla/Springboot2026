@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee details</title>
+    </head>
+    <body>
+        <form action="mailto:info@capgemini.com" method="post" enctype="multipart/form-data">
+            <table border="1" style="background-color:rgb(173,216,230)" width="450";>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>
+                        <input type="text" name="Empname" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Employee code</b></td>
+                    <td>
+                        <input type="text" name="EmpCode" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Department</b></td>
+                    <td>
+                        <input type="radio" name="dept" value="Admin">Admin<br>
+                        <input type="radio" name="dept" value="HR">HR<br>
+                        <input type="radio" name="dept" value="Technical">Technical<br>
+                        <input type="radio" name="dept" value="Accounts">Accounts<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Date of Joining</b></td>
+                    <td>
+                        <select name="join_dd">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>dd
+                        <select name="join_mm">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                        </select>mm
+                        <select name="join_yyyy">
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                        </select>yyyy
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td>
+                        <textarea name="Address" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Training program attended</b></td>
+                    <td>
+                        <input type="checkbox" name="prog_attended" value="HTML/DHTML">HTML/DHTML<br>
+                        <input type="checkbox" name="prog_attended" value="Java">Java<br>
+                        <input type="checkbox" name="prog_attended" value="Client/Server">Client/Server<br>
+                        <input type="checkbox" name="prog_attended" value=".NET">.NET<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Training program need to attend</b></td>
+                    <td>
+                        <select name="prog_needed">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Corba">Corba</option>
+                            <option value="Visual Basic6">Visual Basic6</option>
+                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Send the information at</b></td>
+                    <td>
+                        <input type="submit" value="empinfo@capgemini.com">
+                    </td>
+                </tr>
+            </table>
+            </form>
+            </body>
+            </html>
