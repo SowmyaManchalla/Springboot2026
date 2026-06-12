@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Array</title>
+    </head>
+    <body>
+        <script>
+            var emp = new Array(6);
+            emp[0] = "Tove";
+            emp[1] = "Hege";
+            emp[2] = "Stale";
+            emp[3] = "Kal Jim";
+            emp[4] = "Borge";
+
+            document.write("<h2>List of employees</h2>");
+            document.write("-----------------------<br>");
+
+            for(var i=0;i<emp.length;i++)
+        {
+            document.write((i+1)+". "+emp[i]+"<br>");
+        }
+        </script>
+    </body>
+</html>
