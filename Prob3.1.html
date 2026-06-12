@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        var d = new Date();
+
+        var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var dayName = days[d.getDay()];
+        var monthName = months[d.getMonth()];
+        var dateNum = d.getDate();
+        var hours=d.getHours();
+        var minutes=d.getMinutes();
+        var seconds=d.getSeconds();
+        var year = d.getFullYear();
+
+        var dateString = dayName+ " " +monthName+ " " +dateNum+" "+hours+":"+minutes+":" +seconds+" "+year;
+        var greeting =(hours<12)? "Good Morning":(hours<=17)?"Good Afternoon":"Good Evening";
+
+        document.write(dateString + "<br>");
+        document.write(greeting);
+    </script>
+</body>
+</html>
